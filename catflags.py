@@ -9,12 +9,12 @@ try:
     f = open("ports.json", "r+")
     ports = json.load(f)
     f.close()
-except 3:
+except:
     searcher()
     f = open("ports.json", "r+")
     ports = json.load(f)
     f.close()
-    raise
+    pass
 
 
 while 1:
